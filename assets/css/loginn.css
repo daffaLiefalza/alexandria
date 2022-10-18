@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 80%;
+  padding-left: 8%;
+  margin-top: 2.5rem;
+}
+
+.wrapper p {
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.wrapper > p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #a4a4a4;
+}
+
+input[type="text"] {
+  border: 1px solid #2a2f35;
+  border-radius: 1.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+input[type="password"] {
+  border: 1px solid #2a2f35;
+  border-radius: 1.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.callback {
+  display: flex;
+  justify-content: space-between;
+}
+
+.callback p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #a4a4a4;
+  cursor: pointer;
+}
+
+.btn-login {
+  display: inline-block;
+  background-color: #b08335;
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 1.6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-login:hover {
+  color: #fff;
+  background-color: #8e5b04;
+}
+
+.button-login {
+  margin-top: 20px;
+  margin-left: 9.5%;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #8e5b04;
+}
+
+/* Below 950px */
+@media (max-width: 950px) {
+  .right-img {
+    display: none;
+  }
+
+  .row {
+    margin-left: 0;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+}

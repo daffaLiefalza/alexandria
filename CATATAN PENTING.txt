@@ -1,0 +1,6 @@
+------ Pengelolaan Nilai Berbasis Web Alexandria -------
+
+* Layouting website ini dibuat dengan viewport max 1280px 
+
+
+* Terdapat kemungkinan layouting yang di-implementasikan akan tidak sesuai apabila dibuka pada layar yang melebihi 1280px 

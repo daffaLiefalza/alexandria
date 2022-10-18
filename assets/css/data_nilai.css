@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.grid-container {
+  text-align: center;
+  display: grid;
+  column-gap: 1.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "sidebar sidebar sidebar"
+    "main main main"
+    "info info info";
+}
+
+.header {
+  grid-area: header;
+  padding: 20px 30px;
+  border-bottom: 2px solid #000;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+header img {
+  margin-left: 83%;
+  width: 80px;
+}
+
+.search {
+  border: none;
+  border-bottom: 1px solid #838383;
+  position: relative;
+  padding: 5px;
+}
+
+/* .header input + img {
+  width: 40px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 1px solid red;
+} */
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 50px 0;
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  font-style: italic;
+  color: #694b39;
+}
+
+.sidebar li {
+  margin: 30px 0;
+}
+
+.sidebar ul li a {
+  font-size: 1.4rem;
+  color: #694b39;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #27160b;
+  transform: translateX(15px);
+}
+.main {
+  grid-area: main;
+}
+
+.main table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main table tr:nth-child(even) {
+  background-color: #f6f1e4;
+}
+
+.main table tr td:last-child {
+  text-align: center;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 5px 15px;
+}
+
+.info {
+  grid-area: info;
+  padding-top: 5%;
+  background-color: #e1d0a6;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info img {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.info h3 {
+  margin-bottom: 10px;
+}
+
+.info table {
+  width: 100%;
+  padding: 0;
+}
+
+.info table tr td:nth-child(1) {
+  text-align: start;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    border: none;
+  }
+
+  .search {
+    width: 60%;
+    margin-right: 200px;
+  }
+
+  .search-icon {
+    max-width: 25px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+  }
+
+  header img {
+    margin: 0;
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "sidebar header header"
+      "sidebar main info"
+      "sidebar main info"
+      "sidebar main info";
+  }
+
+  .sidebar {
+    /* margin-right: 20%; */
+    border-right: 1px solid #9f9f9f;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-icon {
+    display: none;
+  }
+}

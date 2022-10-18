@@ -1,0 +1,39 @@
+img {
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.navbar {
+  padding: 1% 15%;
+  background-color: #000000;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  filter: brightness(50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.absolute {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  color: #fff;
+  font-style: italic;
+  font-size: 2rem;
+}
